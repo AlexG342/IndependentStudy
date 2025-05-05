@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color:#f4f5f7;
+    color:#333;
+    padding-bottom:100px;
+}
+
+header{
+    background-color: #3b8c88;
+    color: white;
+}
+
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu-icon{
+    font-size: 1.8rem;
+    cursor:pointer;
+}
+
+.header-nav{
+    list-style:none;
+    display:none;
+    flex-direction:column;
+    background-color:#3b8c88;
+}
+
+.header-nav li{
+    padding: 15px 20px;
+    border-top: 1px solid #3b8c88;
+    cursor: pointer;
+    color:white;
+}
+
+.header-nav li:hover{
+    background-color: #3aafa9;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color:white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+h2, h3{
+    color:#2b7a78;
+    margin-bottom:15px;
+}
+
+ul{
+    list-style:none;
+    padding-left:0;
+}
+
+ul li {
+    margin-bottom:10px;
+    font-size: 1rem;
+}
+
+.game {
+    display:flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.game:hover{
+    background-color: #f0e7ff;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.game img{
+    width:120px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 15px;
+    object-fit:cover;
+}
+
+.game-info{
+    max-width:600px;
+}
+
+.game-info h4{
+    margin-bottom: 5px;
+    color#333;
+    font-size: 1.1rem;
+}
+
+footer{
+    background-color:#2b7a78;
+    color:#ddd;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a{
+    color: #facc15;
+    text-decoration:none;
+    margin:0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 600px) {
+    .header-nav {
+      display: flex !important;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  
+    .menu-icon {
+      display: none;
+    }
+  }
