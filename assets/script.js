@@ -18,3 +18,5 @@ const screenshots = document.querySelectorAll('.screenshot');
       currentIndex = (currentIndex - 1 + screenshots.length) % screenshots.length;
       showScreenshot(currentIndex);
     });
+
+    
